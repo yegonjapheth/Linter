@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linting and Correction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Linting and Correction Results</h1>
+
+    <h2>Original Code</h2>
+    <pre>{{ original_code }}</pre>
+
+    <h2>Corrected Code</h2>
+    <pre>{{ corrected_code }}</pre>
+
+    <h2>Linting Output</h2>
+    <pre>{{ lint_output }}</pre>
+
+    <h2>Changes Made</h2>
+    <pre>{{ changes }}</pre>
+
+    <a href="{{ download_url }}">Download Corrected File</a>
+    <br><br>
+    <a href="{{ url_for('index') }}">Go Back</a>
+</body>
+</html>
